@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finance Tracker</h1>
+
+        <div class="summary">
+            <div class="summary-item">
+                <h2>Balance</h2>
+                <p id="balance">$0.00</p>
+            </div>
+            <div class="summary-item">
+                <h2>Income</h2>
+                <p id="income">$0.00</p>
+            </div>
+            <div class="summary-item">
+                <h2>Expenses</h2>
+                <p id="expense">$0.00</p>
+            </div>
+        </div>
+
+        <div class="transaction-form">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="add-btn">Add Transaction</button>
+        </div>
+
+        <div class="transaction-list">
+            <h3>Transactions</h3>
+            <ul id="transactions"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
